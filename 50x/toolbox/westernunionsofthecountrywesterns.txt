@@ -1,0 +1,16 @@
+After trying and struggling to draw VARIK's character in a "three quarters" pose for a decent period of time and taking rather long breaks between drawings, VARIK actually manages to somewhat decently draw VARIK's character such that VARIK's character is depicted in a "three quarters" pose.
+Additionally, this drawing is not _too_ obnoxiously watermarked.  However, this drawing is NOT released into the public domain.  VARIK retains the rights to this drawing, although this fact may change as time passes; as time passes, VARIK becomes increasingly friendly to the idea of releasing VARIK's drawings into the public domain.
+
+This drawing is drawn using Krita, which VARIK quite dislikes.
+During the creation of this drawing, Krita is all but unusably slow, as Krita manages to make layers invisible in the short timespan of approximately thirty seconds.  Partially as a result of this slowness, VARIK may create future drawings using CLIP STUDIO PAINT EX; VARIK owns a copy of CLIP STUDIO PAINT EX and finds that CLIP STUDIO PAINT EX is superior to Krita by nearly every metric.  VARIK's appreciation for WINE on FreeBSD manages to grow even greater.
+GIMP is also used for a short while; however, after being in development for multiple decades, GIMP lacks some basic features which VARIK uses, e.g., clipping masks.  As such, VARIK completes this drawing with Krita.
+The "open-source" idea is cool... but can generate some real shit.  "Critics can fix the software" is a crap excuse, as not all users are computer programmers.  Additionally, nearly unmaintainable source code exists, and VARIK does not find that Krita's source code is particularly good.
+These problems are mentioned because VARIK wishes to like Krita and GIMP... but cannot actually like Krita and GIMP unless KRITA and GIMP stop being frass.
+
+Determining the meanings of the "logos" which are present on the toolbox is left as a trivial exercise for the reader.  "[L]ogos" is written in inverted commas because some such things may not really be logos.
+
+The history of this file may eventually be uploaded to GitHub; this file is tracked via Git, generating a fairly large repository.  However, this history _may_ be encrypted, as VARIK wishes to be able to reasonably easily provide evidence of VARIK's having created this drawing.
+
+As ever, decent criticism is strongly appreciated.  However, VARIK requests that such criticism is detailed; VARIK finds that the extent to which "the shape of the fur does not match the shading of the arm" is helpful is greater than the extent to which "the fur looks bad" is helpful, although both things can be helpful.
+
+This description is written with the good ol' ed(1).
