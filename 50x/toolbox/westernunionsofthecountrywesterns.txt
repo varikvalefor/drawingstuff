@@ -7,6 +7,8 @@ GIMP is also used for a short while; however, after being in development for mul
 The "open-source" idea is cool... but can generate some real shit.  "Critics can fix the software" is a crap excuse, as not all users are computer programmers.  Additionally, nearly unmaintainable source code exists, and VARIK does not find that Krita's source code is particularly good.
 These problems are mentioned because VARIK wishes to like Krita and GIMP... but cannot actually like Krita and GIMP unless Krita and GIMP stop being frass.
 
+This drawing should eventually be used as the image of the "50x" error pages of VARIK's Web servers.
+
 Determining the meanings of the "logos" which are present on the toolbox is left as a trivial exercise for the reader.  "[L]ogos" is written in inverted commas because some such things may not really be logos.
 
 The history of this file may eventually be uploaded to GitHub; this file is tracked via Git, generating a fairly large repository.  However, this history _may_ be encrypted, as VARIK wishes to be able to reasonably easily provide evidence of VARIK's having created this drawing.
