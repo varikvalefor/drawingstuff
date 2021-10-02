@@ -5,7 +5,7 @@ This drawing is drawn using Krita, which VARIK quite dislikes.
 During the creation of this drawing, Krita is all but unusably slow, as Krita manages to make layers invisible in the short timespan of approximately thirty seconds.  Partially as a result of this slowness, VARIK may create future drawings using CLIP STUDIO PAINT EX; VARIK owns a copy of CLIP STUDIO PAINT EX and finds that CLIP STUDIO PAINT EX is superior to Krita by nearly every metric.  VARIK's appreciation for WINE on FreeBSD manages to grow even greater.
 GIMP is also used for a short while; however, after being in development for multiple decades, GIMP lacks some basic features which VARIK uses, e.g., clipping masks.  As such, VARIK completes this drawing with Krita.
 The "open-source" idea is cool... but can generate some real shit.  "Critics can fix the software" is a crap excuse, as not all users are computer programmers.  Additionally, nearly unmaintainable source code exists, and VARIK does not find that Krita's source code is particularly good.
-These problems are mentioned because VARIK wishes to like Krita and GIMP... but cannot actually like Krita and GIMP unless KRITA and GIMP stop being frass.
+These problems are mentioned because VARIK wishes to like Krita and GIMP... but cannot actually like Krita and GIMP unless Krita and GIMP stop being frass.
 
 Determining the meanings of the "logos" which are present on the toolbox is left as a trivial exercise for the reader.  "[L]ogos" is written in inverted commas because some such things may not really be logos.
 
