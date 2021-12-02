@@ -1,0 +1,18 @@
+Let there exist a man $J$.
+$K$ denotes the depicted man.
+In the middle of an arbitrary night, as $J$ walks down an arbitrary street and nears a power substation, $K$ appears from behind a bush and slowly approaches $J$.
+Whilst $J$ appears rather surprised and unnerved, $K$ opens $K$'s coat and speaks the following words: "Hey, kid... want some free software?"
+Determining whether or not $J$ "takes up" $K$'s offer is left as an exercise for the reader.
+
+Another dumb joke is revealed!  In this case, the joke takes the form of a drawing which is called "HOLLYWOODFREAKSONTHEHOLLYWOODSCENE".
+
+In addition to being a dumb joke, this drawing is VARIK's first _real_ attempt to draw fabric.
+
+The "7.0" disc is an OpenBSD installation disc, and the "13" disc is a FreeBSD installation disc.  As of the publishing of this drawing, 7.0 and 13.0 are the most recent versions of OpenBSD and FreeBSD, respectively.
+The reader can assume that the contents of the pockets of the coat are specifications and compilers of the programming languages whose "logos" are mentioned.  "[L]ogos" is written in inverted commas because one such "logo" is not an established logo but is a recognisable feature of the programming language which this "logo" represents.
+Whilst conceptualising this drawing, VARIK intends to mention a relatively great number of softwares.  However, there exists an idea such that this idea does not immediately come to fruition.  A "deluxe" version of this drawing may eventually be created.
+
+As ever, criticism regarding this drawing is appreciated.
+
+This drawing is drawn using GIMP.
+This description is written using ed(1).
