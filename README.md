@@ -1,1 +1,2 @@
 # drawingstuff
+This repository contains some drawings for which VARIK is responsible, as well as a document which contains descriptions of such drawings.
