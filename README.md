@@ -1,2 +1,2 @@
-# drawingstuff
-This repository contains some drawings for which VARIK is responsible, as well as a document which contains descriptions of such drawings.
+# la'o gy. drawingstuff .gy
+.i ti poi datnyveimei cu vasru su'o le pixra be fi la .varik. ku .e le tetcidu poi skicu le pixra
