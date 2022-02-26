@@ -19,6 +19,20 @@
      id="defs40">
     <inkscape:path-effect
        effect="powerstroke"
+       id="path-effect492"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="0,0.1322915"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
        id="path-effect472"
        is_visible="true"
        lpeversion="1"
@@ -127,9 +141,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="446.538"
-     inkscape:cy="360.85779"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="347.84837"
+     inkscape:cy="726.83746"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -185,6 +199,10 @@
         </g>
       </g>
     </a>
+    <path
+       style="fill:#00ff00;fill-rule:nonzero;stroke:none;stroke-width:0.0700042;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 95.671282,196.41926 0.279283,-5.57445 -4.507891,-0.348 -8.111461,-2.29895 -1.283023,4.4346 3.247231,2.35616 2.848825,1.01673 4.588049,0.66083 z"
+       id="path490" />
     <path
        id="path64"
        style="opacity:0.7;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:0.999999"
