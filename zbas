@@ -1,0 +1,39 @@
+#!/bin/ksh
+
+function cpng {
+	djxl --bits_per_sample=8 "$1" "${1%jxl}png"
+}
+
+function ltx_internal {
+        lualatex --draftmode "$1" &&
+        bibtex "${1%.tex}";
+        lualatex --draftmode "$1" &&
+        lualatex "$1";
+
+        # | ni'o xu cadga fa lo nu vimcu  .i ga je pilno
+        # la'o zoi. ltx_internal .zoi. tu'a lo mulno noi
+        # tu'a lo se vimcu cu na sarcu lo nu pilno ke'a
+        for i in dvi log aux toc out bbl snm nav blg
+        do
+                rm "${1%.tex}.$i" &
+        done;
+}
+
+function ltx {
+	G="${1%.tex}.pdf";
+
+	if test -e "$G"
+	then
+		if test "$(stat -f '%m' \"$G\")" -le "$(stat -f '%m' \"$1\")"
+                then
+			ltx_internal "$1";
+		else
+			echo "The file is aleady compiled, jack-ass.";
+		fi
+	else ltx_internal "$1";
+	fi
+}
+
+cpng "deliriumsequels/deliriumsequels-kb.jxl"
+
+ltx "drawings.tex"
