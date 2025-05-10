@@ -1,7 +1,7 @@
 #!/bin/ksh
 
 function cpng {
-	djxl --bits_per_sample=8 "$1" "${1%jxl}png"
+	gm convert "$1" -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}png"
 }
 
 function ltx_internal {
