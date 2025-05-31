@@ -35,5 +35,6 @@ function ltx {
 }
 
 cpng "deliriumsequels/deliriumsequels-kb.jxl"
+cpng "blackholeblackhole/blackholeblackhole-sfw.jxl"
 
 ltx "drawings.tex"
