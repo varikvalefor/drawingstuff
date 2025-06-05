@@ -1,7 +1,7 @@
 #!/bin/ksh
 
 function cpng {
-	gm convert "$1" -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}png"
+	djxl "$1" - --output_format png | gm convert - -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}png"
 }
 
 function ltx_internal {
@@ -37,5 +37,6 @@ function ltx {
 cpng "deliriumsequels/deliriumsequels-kb.jxl"
 cpng "blackholeblackhole/blackholeblackhole-sfw.jxl"
 cpng "blackholeblackhole/blackholeblackhole-1v1x4-sfw.jxl"
+cpng "blinddateatthewaxmuseum/blinddateatthewaxmuseum.jxl"
 
 ltx "drawings.tex"
