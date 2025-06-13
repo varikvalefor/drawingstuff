@@ -4,6 +4,14 @@ function cpng {
 	djxl "$1" - --output_format png | gm convert - -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}png"
 }
 
+function cjpg {
+	djxl "$1" - --output_format jpeg | gm convert - -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}jpg"
+}
+
+function cbeebies {
+	fuck you
+}
+
 function ltx_internal {
         lualatex --draftmode "$1" &&
         bibtex "${1%.tex}";
@@ -39,5 +47,8 @@ cpng "blackholeblackhole/blackholeblackhole-sfw.jxl"
 cpng "blackholeblackhole/blackholeblackhole-1v1x4-sfw.jxl"
 cpng "blinddateatthewaxmuseum/blinddateatthewaxmuseum.jxl"
 cpng "blinddateatthewaxmuseum/blinddateatthewaxmuseum-whisk.jxl"
+cpng "blinddateatthewaxmuseum/ctinytsautur.jxl"
+cpng "wedancealonethisway/wedancealonethisway.jxl"
+cjpg "wedancealonethisway/sipygai0w1.jxl"
 
 ltx "drawings.tex"
