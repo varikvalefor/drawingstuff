@@ -1,11 +1,21 @@
 #!/bin/ksh
 
 function cpng {
-	djxl "$1" - --output_format png | gm convert - -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}png"
+	if [ -s "${1%jxl}png" ]
+	then
+		echo "ni'o zasti"
+	else
+		djxl "$1" - --output_format png | gm convert - -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}png"
+	fi
 }
 
 function cjpg {
-	djxl "$1" - --output_format jpeg | gm convert - -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}jpg"
+	if [ -s "${1%jxl}jpg" ]
+	then
+		echo "ni'o zasti"
+	else
+		djxl "$1" - --output_format jpeg | gm convert - -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}jpg"
+	fi
 }
 
 function cbeebies {
@@ -51,5 +61,7 @@ cpng "blinddateatthewaxmuseum/ctinytsautur.jxl"
 cpng "wedancealonethisway/wedancealonethisway.jxl"
 cjpg "wedancealonethisway/sipygai0w1.jxl"
 cpng "takingturnsbreakingwords/takingturnsbreakingwords-rc4.jxl"
+cpng "toomuchlefttotaste/dvt1.jxl"
+cpng "toomuchlefttotaste/dvt2.jxl"
 
 ltx "drawings.tex"
