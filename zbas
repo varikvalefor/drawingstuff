@@ -64,6 +64,7 @@ cpng "takingturnsbreakingwords/takingturnsbreakingwords-rc4.jxl"
 cpng "shininglikecrystaltiaras/dvt1.jxl"
 cpng "shininglikecrystaltiaras/dvt2.jxl"
 cpng "itsastrangeinvitation/itsastrangeinvitation-rc2.jxl"
+cpng "itsastrangeinvitation/ts1.jxl"
 
 (export CMENE=shininglikecrystaltiaras && cd $CMENE && djxl $CMENE.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(2\,n)' -vframes 1 $CMENE-ctino2.png)
 
