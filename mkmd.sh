@@ -1,6 +1,6 @@
 mkdir markdown;
 ls -1F | grep '\/$' | xargs -Ifuck mkdir markdown/fuck; 
-mkdir markdown/50x/toolbox;
+mkdir -p markdown/50x/toolbox;
 
 for i in $(cat drawings.tex  | pcregrep -o '{.*?\.(png|jpg)}' | sed -e 's/^{//' | sed -e 's/}$//')
 do
