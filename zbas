@@ -69,5 +69,8 @@ cpng "suchabeautifulway/rc3.jxl"
 cpng "suchabeautifulway/rc3-flira.jxl"
 
 (export CMENE=shininglikecrystaltiaras && cd $CMENE && djxl $CMENE.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(2\,n)' -vframes 1 $CMENE-ctino2.png)
+(cd suchabeautifulway && djxl rc3-flira.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(1\,n)' -vframes 1 rc3-flira.png)
 
 ltx "drawings.tex"
+
+(/usr/local/bin/gs -dPDFSETTINGS=/prepress -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -sOutputFile=drawings-cmalu.pdf -dBATCH -dNOPAUSE drawings.pdf && rm drawings.pdf && mv drawings-cmalu.pdf drawings.pdf)
