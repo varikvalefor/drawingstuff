@@ -18,10 +18,6 @@ function cjpg {
 	fi
 }
 
-function cbeebies {
-	fuck you
-}
-
 function ltx_internal {
         lualatex --draftmode "$1" &&
         bibtex "${1%.tex}";
