@@ -42,7 +42,7 @@ function ltx {
                 then
 			ltx_internal "$1";
 		else
-			echo "The file is aleady compiled, jack-ass.";
+			echo ".i na li'armi mi fa lo du'u sarcu fa lo nu co'e ja rapli pe'a fa lo pu'u samrkompli"
 		fi
 	else ltx_internal "$1";
 	fi
