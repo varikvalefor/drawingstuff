@@ -1,20 +1,22 @@
 #!/bin/ksh
 
-function cpng {
-	if [ -s "${1%jxl}png" ]
+function cvxx {
+	if [ "$1" = "jpg" ]
 	then
-		echo "ni'o zasti"
+		FMT="jpeg"
+	elif [ "$1" = "png" ]
+	then
+		FMT="png"
 	else
-		djxl "$1" - --output_format png | gm convert - -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}png"
+		echo "ni'o la'oi .cvxx. na mapto tu'a zoi .zoix. $1 .zoix."
+		exit
 	fi
-}
 
-function cjpg {
-	if [ -s "${1%jxl}jpg" ]
+	if [ -s "${2%jxl}$1" ]
 	then
 		echo "ni'o zasti"
 	else
-		djxl "$1" - --output_format jpeg | gm convert - -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${1%jxl}jpg"
+		djxl "$2" - --output_format $FMT | gm convert - -profile /usr/local/share/color/icc/krita/sRGB-elle-V2-srgbtrc.icc -depth 8 "${2%jxl}$1"
 	fi
 }
 
@@ -48,23 +50,23 @@ function ltx {
 	fi
 }
 
-cpng "deliriumsequels/deliriumsequels-kb.jxl"
-cpng "blackholeblackhole/blackholeblackhole-sfw.jxl"
-cpng "blackholeblackhole/blackholeblackhole-1v1x4-sfw.jxl"
-cpng "blinddateatthewaxmuseum/blinddateatthewaxmuseum.jxl"
-cpng "blinddateatthewaxmuseum/blinddateatthewaxmuseum-whisk.jxl"
-cpng "blinddateatthewaxmuseum/ctinytsautur.jxl"
-cpng "wedancealonethisway/wedancealonethisway.jxl"
-cjpg "wedancealonethisway/sipygai0w1.jxl"
-cpng "takingturnsbreakingwords/takingturnsbreakingwords-rc4.jxl"
-cpng "shininglikecrystaltiaras/dvt1.jxl"
-cpng "shininglikecrystaltiaras/dvt2.jxl"
-cpng "itsastrangeinvitation/itsastrangeinvitation-rc2.jxl"
-cpng "itsastrangeinvitation/ts1.jxl"
-cpng "suchabeautifulway/rc3.jxl"
-cpng "suchabeautifulway/rc3-flira.jxl"
-cpng "suchabeautifulway/trashy-proof-of-concept.jxl"
-cpng "suchabeautifulway/calsamxra-co-stedu-co-skari.jxl"
+cvxx png "deliriumsequels/deliriumsequels-kb.jxl"
+cvxx png "blackholeblackhole/blackholeblackhole-sfw.jxl"
+cvxx png "blackholeblackhole/blackholeblackhole-1v1x4-sfw.jxl"
+cvxx png "blinddateatthewaxmuseum/blinddateatthewaxmuseum.jxl"
+cvxx png "blinddateatthewaxmuseum/blinddateatthewaxmuseum-whisk.jxl"
+cvxx png "blinddateatthewaxmuseum/ctinytsautur.jxl"
+cvxx png "wedancealonethisway/wedancealonethisway.jxl"
+cvxx jpg "wedancealonethisway/sipygai0w1.jxl"
+cvxx png "takingturnsbreakingwords/takingturnsbreakingwords-rc4.jxl"
+cvxx png "shininglikecrystaltiaras/dvt1.jxl"
+cvxx png "shininglikecrystaltiaras/dvt2.jxl"
+cvxx png "itsastrangeinvitation/itsastrangeinvitation-rc2.jxl"
+cvxx png "itsastrangeinvitation/ts1.jxl"
+cvxx png "suchabeautifulway/rc3.jxl"
+cvxx png "suchabeautifulway/rc3-flira.jxl"
+cvxx png "suchabeautifulway/trashy-proof-of-concept.jxl"
+cvxx png "suchabeautifulway/calsamxra-co-stedu-co-skari.jxl"
 
 (export CMENE=shininglikecrystaltiaras && cd $CMENE && djxl $CMENE.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(2\,n)' -vframes 1 $CMENE-ctino2.png)
 (cd suchabeautifulway && djxl rc3-flira.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(1\,n)' -vframes 1 rc3-flira.png)
