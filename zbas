@@ -8,7 +8,7 @@ function cvxx {
 	then
 		FMT="png"
 	else
-		echo "ni'o la'oi .cvxx. na mapto tu'a zoi .zoix. $1 .zoix."
+		echo "ni'o la'oi .cvxx. na mapti tu'a zoi .zoix. $1 .zoix."
 		exit
 	fi
 
