@@ -64,6 +64,7 @@ cpng "itsastrangeinvitation/ts1.jxl"
 cpng "suchabeautifulway/rc3.jxl"
 cpng "suchabeautifulway/rc3-flira.jxl"
 cpng "suchabeautifulway/trashy-proof-of-concept.jxl"
+cpng "suchabeautifulway/calsamxra-co-stedu-co-skari.jxl"
 
 (export CMENE=shininglikecrystaltiaras && cd $CMENE && djxl $CMENE.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(2\,n)' -vframes 1 $CMENE-ctino2.png)
 (cd suchabeautifulway && djxl rc3-flira.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(1\,n)' -vframes 1 rc3-flira.png)
