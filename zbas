@@ -70,6 +70,7 @@ cvxx png "suchabeautifulway/calsamxra-co-stedu-co-skari.jxl"
 cvxx jpg "csx1/kerfa-1.jxl"
 cvxx png "csx1/kerfa-2.jxl"
 cvxx png "csx1/lmc-1.jxl"
+cvxx png "almostaghost/rc4.jxl"
 
 (export CMENE=shininglikecrystaltiaras && cd $CMENE && djxl $CMENE.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(2\,n)' -vframes 1 $CMENE-ctino2.png)
 (cd suchabeautifulway && djxl rc3-flira.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(1\,n)' -vframes 1 rc3-flira.png)
