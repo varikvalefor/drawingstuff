@@ -76,6 +76,7 @@ cvxx png "almostaghost/rc4.jxl"
 (cd suchabeautifulway && djxl rc3-flira.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(1\,n)' -vframes 1 rc3-flira.png)
 (cd droningoutofatincan && djxl m.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(0\,n)' -vframes 1 rc4.png)
 (cd droningoutofatincan && djxl m.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(1\,n)' -vframes 1 rc6.png)
+(cd strangerstranger && djxl m.jxl --output_format apng - | ffmpeg -y -c:v png -i - -vframes 1 rc2.png)
 
 ltx "drawings.tex"
 
