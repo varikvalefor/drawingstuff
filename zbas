@@ -78,6 +78,7 @@ cvxx png "almostaghost/rc4.jxl"
 (cd droningoutofatincan && djxl m.jxl --output_format apng - | ffmpeg -y -f apng -i - -vf 'select=eq(1\,n)' -vframes 1 rc6.png)
 (cd strangerstranger && djxl m.jxl --output_format apng - | ffmpeg -y -c:v png -i - -vframes 1 rc2.png)
 (cd mwjbg && djxl m.jxl --output_format apng - | ffmpeg -y -c:v png -i - -vframes 1 rc3.png)
+(cd dontburnmytoast && djxl m.jxl --output_format apng - | ffmpeg -y -c:v png -i - -vframes 1 m.png)
 
 ltx "drawings.tex"
 
