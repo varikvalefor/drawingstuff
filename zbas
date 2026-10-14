@@ -1,8 +1,5 @@
 #!/bin/ksh
 
-if [ "$1" != "sutra" ]
-then
-
 function cvxx {
 	if [ "$1" = "jpg" ]
 	then
@@ -52,6 +49,9 @@ function ltx {
 	else ltx_internal "$1";
 	fi
 }
+
+if [ "$1" != "sutra" ]
+then
 
 cvxx png "deliriumsequels/deliriumsequels-kb.jxl"
 cvxx png "blackholeblackhole/blackholeblackhole-sfw.jxl"
