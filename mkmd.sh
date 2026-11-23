@@ -1,8 +1,10 @@
+set -x
+
 mkdir markdown;
 ls -1F | grep '\/$' | xargs -Ifuck mkdir markdown/fuck; 
 mkdir -p markdown/50x/toolbox;
 
-for i in $(cat drawings.tex  | pcregrep -o '{.*?\.(png|jpg)}' | sed -e 's/^{//' | sed -e 's/}$//')
+for i in $(cat drawings.tex  | pcregrep -o ']{.*?\.(png|jpg)}' | sed -e 's/^\]{//' | sed -e 's/}$//')
 do
 	ffmpeg -i "$i" -n -vf scale=512:-1 -compression_level 6 -quality 50 "markdown/$i-cmalu.webp";
 done
